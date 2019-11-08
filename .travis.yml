@@ -1,7 +1,9 @@
 sudo: required
 
 services:
-	- docker
+  - docker
+
+language: python
 
 after_success:
-	- sh .travis/deploy_docker_image.sh
+  - sh .travis/deploy_docker_image.sh
